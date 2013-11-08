@@ -87,6 +87,7 @@ module MultiJson
   # * <tt>:nsjsonserialization</tt> (MacRuby only)
   # * <tt>:gson</tt> (JRuby only)
   # * <tt>:jr_jackson</tt> (JRuby only)
+  # * <tt>:jr_jackson_raw</tt> (JRuby only)
   def use(new_adapter)
     @adapter = load_adapter(new_adapter)
   end
