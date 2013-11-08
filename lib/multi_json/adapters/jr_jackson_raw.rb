@@ -6,7 +6,7 @@ module MultiJson
     class JrJacksonRaw < Adapter
       ParseError = ::JrJackson::ParseError
 
-      def load(string) #:nodoc:
+      def load(string, options={}) #:nodoc:
         ::JrJackson::Raw.parse_raw(string)
       end
 
